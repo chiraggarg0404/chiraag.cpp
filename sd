@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,c,d;
+    float e,f,g,h;
+    printf("enter integers");
+    scanf("%d%d",&a,&b);
+    printf("enter float");
+    scanf("%f%f",&e,&f);
+    c=a+b;
+    d=a-b;
+    g=e+f;
+    h=e-f;
+    printf("%d\n%d\n%f\n%f\n",c,d,g,h);
+    return 0;
+    
+    
+}
