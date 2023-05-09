@@ -1,0 +1,27 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+
+
+int find_nth_term(int n, int a, int b, int c) {
+  int i,p[n-1];
+  p[0]=a;
+  p[1]=b;
+  p[2]=c;
+  for(i=3;i<n;i++)
+  p[i]=p[i-1]+p[i-2]+p[i-3];
+  return p[n-1];
+  
+}
+
+int main() {
+    int n, a, b, c;
+  
+    cin>>n>>a>>b>>c;
+    int ans = find_nth_term(n, a, b, c);
+ 
+    cout<<ans; 
+
+    return 0;
+}
