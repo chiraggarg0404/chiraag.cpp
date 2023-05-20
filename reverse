@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+    int n,y,rem=0;
+    cout << "enter the number";
+    cin >> n;
+    while(n!=0)
+    {y=n%10;
+    rem=rem*10+y;
+    n=n/10;
+    }
+    cout<<rem;
+
+    return 0;
+}
