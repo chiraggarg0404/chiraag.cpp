@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+    int n,y,p=1,s=0;
+cout << "enter decimal number";
+cin >> n;
+while(n!=0)
+{y=n%2;
+s=s+y*p;
+p=p*10;
+n=n/2;
+}
+cout << s;
+    return 0;
+}
